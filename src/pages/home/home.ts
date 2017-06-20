@@ -17,7 +17,7 @@ export class HomePage {
 
   presentLoading() {
     let loader = this.loadingCtrl.create({
-      content: "Please wait...",
+      content: "",
       duration: 1000
     });
     loader.present();

@@ -22,26 +22,7 @@ export class MainPage {
     this.bus_number=this.navParams.get("bus_number");
   }
   confirm() {
-    let confirm = this.alertCtrl.create({
-      title: 'Log-Out?',
-      message: 'Are you sure you want to logout?',
-      buttons: [
-        {
-          text: 'Disagree',
-          handler: () => {
-            console.log('Disagree clicked');
-          }
-        },
-        {
-          text: 'Agree',
-          handler: () => {
-            console.log('Agree clicked');
-            this.navCtrl.pop();
-          }
-        }
-      ]
-    });
-    confirm.present();
+    this.navCtrl.pop();
   }
   search(){
     this.navCtrl.push(SearchPage);
