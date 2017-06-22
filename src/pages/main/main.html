@@ -12,9 +12,9 @@
         </button>
       </ion-buttons>
       <ion-title>
-        <div style="color: #3d9d51;position: relative;top:20px">
+        <div style="color: #3d9d51;position: relative;top:20px;font-weight: 300;font-size: medium">
           <ion-row>
-            Hamirpur To Una(<p style="position: relative;top:-20px">{{bus_number}}</p>)
+            Hamirpur To Una (<p style="position: relative;top:-15px">{{bus_number}}</p>)
           </ion-row>
         </div>
       </ion-title>
@@ -28,28 +28,83 @@
 </ion-header>
 
 
-<ion-content padding>
-  <ion-list no-lines>
-    <ion-item style="position: relative;left:40%;color:#3d9d51">
-      <ion-icon name="bus"></ion-icon>
-      Hamirpur
-    </ion-item>
-    <ion-item style="position: relative;left:40%">
-      <ion-icon name="pause" ></ion-icon>
-      Anu
-    </ion-item>
-    <ion-item style="position: relative;left:40%">
-      <ion-icon name="pause" ></ion-icon>
-      Nadon
-    </ion-item>
-    <ion-item style="position: relative;left:40%">
-      <ion-icon name="pause"></ion-icon>
-      Sujaanpur
-    </ion-item>
-    <ion-item style="position: relative;left:40%;color:#c40055">
-      <ion-icon name="flag" ></ion-icon>
-      Una
-    </ion-item>
-  </ion-list>
+<ion-content >
+  <ion-card>
+    <ion-card-header>
+      Route Map
+    </ion-card-header>
+  </ion-card>
+
+<ion-list no-lines>
+  <ion-item>
+    <table>
+      <tr>
+        <td>
+          <button ion-fab mini  color="card"></button>
+        </td>
+        <td>
+          Hamirpur
+        </td>
+      </tr>
+       <div style="position: relative;left:47%">
+         |
+       </div>
+      <tr>
+        <td>
+          <button ion-fab mini  color="card"></button>
+        </td>
+        <td>
+          Sujanpur
+        </td>
+      </tr>
+      <div style="position: relative;left:47%">
+        |
+      </div>
+      <tr>
+        <td>
+          <button ion-fab mini  color="card"></button>
+        </td>
+        <td>
+          Anu
+        </td>
+      </tr>
+      <div style="position: relative;left:47%">
+        |
+      </div>
+      <tr>
+        <td>
+          <button ion-fab mini  color="card"></button>
+        </td>
+        <td>
+          Nadon
+        </td>
+      </tr>
+      <div style="position: relative;left:47%">
+        |
+      </div>
+      <tr>
+        <td>
+          <button ion-fab mini  color="card"></button>
+        </td>
+        <td>
+          Hamirpur
+        </td>
+      </tr>
+    </table>
+
+
+  </ion-item>
+
+
+</ion-list>
+
+
+
+
+
+
+
+
+
 
 </ion-content>
