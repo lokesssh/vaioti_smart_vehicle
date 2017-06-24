@@ -17,6 +17,7 @@ import {SearchPage} from "../search/search";
 })
 export class MainPage {
   bus_number:string;
+  stoppage:any=["Hamirpur","Sujanpur","Nadon","Anu","Una"];
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl:AlertController) {
     this.bus_number=this.navParams.get("bus_number");
