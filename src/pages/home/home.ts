@@ -12,7 +12,6 @@ export class HomePage {
   bus_number: string;
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,public alertCtrl: AlertController) {
-
   }
 
   presentLoading() {
